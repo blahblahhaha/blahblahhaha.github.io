@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Myriad-Apple-Text';
+  src: url('../fonts/MYRIAABI.TTF');
+}
+body {
+  font-family: 'Myriad-Apple-Text';
+}
