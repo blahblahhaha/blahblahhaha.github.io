@@ -1,3 +1,4 @@
+/* HOME PAGE */
 a {
   color: #000;
   font-size: 100px;
@@ -26,8 +27,11 @@ h1 {
   bottom: 0;
   left: 0;
 }
-.about,
-.blog {
+.about:hover,
+.blog:hover,
+.projects:hover,
+.contact:hover {
+  text-decoration: underline;
 }
 
 .projects,
@@ -50,3 +54,100 @@ h1 {
 .blog {
   color: yellow;
 }
+
+/* ABOUT PAGE */
+
+.about-container {
+  max-width: 65%;
+  margin: 0 25px;
+}
+
+.about-container a {
+  color: #609;
+  font-size: 30px;
+  margin: 0;
+}
+
+.about-container h1 {
+  color: red;
+  margin: 70px 0;
+}
+
+.about-container p {
+  font-family: 'Lato';
+  font-size: 20px;
+  margin: 35px 0;
+}
+
+/* PROJECTS PAGE */
+
+.projects-container {
+  max-width: 65%;
+  margin: 0 25px;
+}
+
+.projects-container a {
+  color: #609;
+  font-size: 30px;
+  margin: 0;
+}
+
+.projects-container h1 {
+  color: green;
+  margin: 70px 0;
+}
+
+.projects-container p {
+  font-family: 'Lato';
+  font-size: 20px;
+  margin: 35px 0;
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+  max-width: 65%;
+  margin: 0 25px;
+}
+
+.contact-container a {
+  color: #609;
+  font-size: 30px;
+  margin: 0;
+}
+
+.contact-container h1 {
+  color: blue;
+  margin: 70px 0;
+}
+
+.contact-container p {
+  font-family: 'Lato';
+  font-size: 20px;
+  margin: 35px 0;
+}
+
+/* BLOG PAGE */
+
+.blog-container {
+  max-width: 65%;
+  margin: 0 25px;
+}
+
+.blog-container a {
+  color: #609;
+  font-size: 30px;
+  margin: 0;
+}
+
+.blog-container h1 {
+  color: yellow;
+  margin: 70px 0;
+}
+
+.blog-container p {
+  font-family: 'Lato';
+  font-size: 20px;
+  margin: 35px 0;
+}
+
