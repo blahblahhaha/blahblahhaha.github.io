@@ -1,7 +1,52 @@
-@font-face {
-  font-family: 'Myriad-Apple-Text';
-  src: url('../fonts/MYRIAABI.TTF');
+a {
+  color: #000;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 100px;
+  margin: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
 body {
-  font-family: 'Myriad-Apple-Text';
+  font-family: 'Roboto';
+}
+
+h1 {
+  color: #609;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 100px;
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+
+.links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about,
+.blog {
+}
+
+.projects,
+.contact {
+  font-style: italic;
+}
+
+.about {
+  color: red;
+}
+
+.projects {
+  color: green;
+}
+
+.contact {
+  color: blue;
+}
+
+.blog {
+  color: yellow;
 }
