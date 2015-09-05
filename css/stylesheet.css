@@ -27,7 +27,7 @@ h1 {
   bottom: 0;
   left: 0;
 }
-.about:hover span {
+/*.about:hover span {
   color: yellow;
 }
 .blog:hover span {
@@ -39,7 +39,7 @@ h1 {
 .contact:hover span {
   color: green;
 }
-
+*/
 .projects,
 .contact {
   font-style: italic;
@@ -62,13 +62,19 @@ h1 {
 }
 
 .back span {
-  /*visibility: hidden;*/
-  visibility: visible;
+  visibility: hidden;
 }
 
 .back:hover span {
-  /*visibility: visible;*/
-  visibility: hidden;
+  visibility: visible;
+}
+
+.index-link span {
+  display: none;
+}
+
+.index-link:hover span {
+  display: inline-block;
 }
 
 /* ABOUT PAGE */
@@ -144,12 +150,24 @@ h1 {
   text-transform: uppercase;
 }
 
+.projects-container .project-title {
+  margin: 0 0 35px;
+}
+
+.projects-container .project-link {
+  color: green;
+}
+
 .projects-container .project-description {
   font-size: 16px;
 }
 
-.project-link:hover {
-  background: yellow;
+.project-link span {
+  visibility: hidden;
+}
+
+.project-link:hover span {
+  visibility: visible;
 }
 
 .project-media-object {
