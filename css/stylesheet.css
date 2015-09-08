@@ -26,6 +26,10 @@ h1 {
   visibility: hidden;
 }
 
+.visible {
+  visibility: visible !important;
+}
+
 .links {
   position: absolute;
   bottom: 0;
