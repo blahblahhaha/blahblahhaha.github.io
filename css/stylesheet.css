@@ -184,6 +184,39 @@ h1 {
   zoom: 1;
 }
 
+table {
+  width: 100%;
+  column-width: 50%;
+  margin: 100px 0;
+  vertical-align: top;
+}
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tr {
+  width: 50%;
+  margin: 20px;
+}
+
+.additional-projects {
+  color: green;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/*.additional-project {
+  float: left;
+  width: 50%;
+}*/
+
 /* CONTACT PAGE */
 
 .contact-container {
