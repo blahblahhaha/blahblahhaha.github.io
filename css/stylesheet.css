@@ -88,7 +88,7 @@ h1 {
 /* ABOUT PAGE */
 
 .about-container {
-  max-width: 65%;
+  max-width: 800px;
   margin: 0 25px;
 }
 
@@ -112,7 +112,6 @@ h1 {
 /* PROJECTS PAGE */
 
 .projects-container {
-  /*max-width: 65%;*/
   max-width: 800px;
   margin: 0 25px;
 }
@@ -220,7 +219,7 @@ tr {
 /* CONTACT PAGE */
 
 .contact-container {
-  max-width: 65%;
+  max-width: 800px;
   margin: 0 25px;
 }
 
@@ -271,14 +270,8 @@ tr {
 /* BLOG PAGE */
 
 .blog-container {
-  max-width: 65%;
+  max-width: 800px;
   margin: 0 25px;
-}
-
-.blog-container a {
-  color: #609;
-  font-size: 30px;
-  margin: 0;
 }
 
 .blog-container h1 {
@@ -286,9 +279,44 @@ tr {
   margin: 70px 0;
 }
 
+.blog-container a {
+  font-size: 26px;
+  margin: 0;
+}
+
 .blog-container p {
   font-family: 'Lato';
   font-size: 20px;
-  margin: 35px 0;
+  /*margin: 35px 0;*/
+  margin: 0 15px;
+  padding: 0;
 }
 
+.blog-container .date {
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.blog-container .back {
+  color: #609;
+  font-size: 30px;
+  margin: 0;
+}
+
+.blog-container .continue {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.blog-container .title {
+  font-style: italic;
+}
+
+.blog-container .paragraph h2 {
+  margin: 0 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: italic;
+}

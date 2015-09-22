@@ -6,19 +6,18 @@
     <title>Frances Corry - Blog</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,300,300italic,100,100italic,900italic,700italic,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
     <div class="blog-container">
-      <h1>Blog</h1>
+      <a href="/blog.html"><h1>Blog</h1></a>
       <div class="paragraph">
-        {% for post in site.posts %}
-            <p><a class="title" href="{{ post.url }}">{{ post.title }}</a></p>
-            <p class="date">{{ post.date | date: "%B %e, %Y" }}</p>
-            {{ post.excerpt }}
-            <a class="continue" href="{{ post.url }}">Continue >></a></p>
-        {% endfor %}
-        <a class="back" href="index.html">
+        <h2>{{ page.title }}</h2>
+        <p class="date">{{ page.date | date_to_long_string }}</p>
+        <div>
+          {{ content }}
+        </div>
+        <a class="back" href="/blog.html">
           <span><</span>< BACK
         </a>
       </div>
