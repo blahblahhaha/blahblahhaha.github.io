@@ -169,6 +169,10 @@ h1 {
   font-size: 16px;
 }
 
+.projects-container td p {
+  margin: 0 0 20px;
+}
+
 .project-link span {
   visibility: hidden;
 }
@@ -196,6 +200,10 @@ th {
 th,
 td {
   padding: 10px;
+}
+
+td {
+  vertical-align: top;
 }
 
 tr {
