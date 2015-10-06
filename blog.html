@@ -14,7 +14,7 @@
       <div class="paragraph">
         {% for post in site.posts %}
             <p><a class="title" href="{{ post.url }}">{{ post.title }}</a></p>
-            <p class="date">{{ post.date | date: "%B %e, %Y" }}</p>
+            <!-- <p class="date">{{ post.date | date: "%B %e, %Y" }}</p> -->
             {{ post.excerpt }}
             <a class="continue" href="{{ post.url }}">Continue >></a></p>
         {% endfor %}
