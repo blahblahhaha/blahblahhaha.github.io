@@ -49,10 +49,16 @@
                   <tr class="projects-table-row">
                     <td class="project-description">
                       <p>{{ project.desc }}</p>
-                      <a href="{{ project.link }}" target="_blank" class="project-link">{{ project.media }} ><span>></span></a>
                     </td>
                     <td class="project-description">
                       <p>{{ next.desc }}</p>
+                    </td>
+                  </tr>
+                  <tr class="projects-table-row">
+                    <td class="project-description">
+                      <a href="{{ project.link }}" target="_blank" class="project-link">{{ project.media }} ><span>></span></a>
+                    </td>
+                    <td class="project-description">
                       <a href="{{ next.link }}" target="_blank" class="project-link">{{ next.media }} ><span>></span></a>
                     </td>
                   </tr>
