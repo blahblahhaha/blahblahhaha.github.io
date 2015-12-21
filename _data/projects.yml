@@ -1,0 +1,57 @@
+- name: "Changing Times"
+  desc: "Exploring how the New York Times grappled with the popular adoption of the Web in the early to mid 90s."
+  media: "PDF"
+  image: "images/nyt.jpg"
+  link: "changingtimes.pdf"
+  type: "featured"
+
+- name: "Remix, Remark, Reform: On Feminist Remix Culture"
+  desc: "A non-linear presentation on the abilities and limitations of feminist digital video remix to complicate pop-culture narratives."
+  media: "Prezi"
+  image: "images/remix.jpg"
+  link: "https://prezi.com/ui5qn1kgmot0/feminist-remix-culture/"
+  type: "featured"
+
+- name: "CLICKISTAN, Consciousness, and the Implications of Video Games as High Art"
+  desc: "Interactive games in institutional art contexts may be problematic not for the questions they do raise, but for the questions they don’t."
+  media: "Link"
+  image: "images/click.png"
+  link: "http://www.ubermorgen.com/2010/CLICKISTAN_by_Frances_Corry.html"
+  type: "featured"
+
+- name: >
+    “Love, Frank”: Epistolary Intersections in the Poetry of Frank O'Hara
+  desc: "Drawing on discussions of coterie in scholarship on Frank O’Hara, this essay argues that epistolary works were fundamental in the developing complexity of O’Hara’s poetry."
+  media: "PDF"
+  link: "LoveFrankEpistolaryInt.pdf"
+  type: "additional"
+
+- name: 'Entering’ the Documentary Tradition: On Arthur Rothstein’s “Entering Butte” and the FSA Photography Project'
+  desc: 'Using Arthur Rothstein’s photograph “Entering Butte” to parse the changing meaning of FSA photographs as they migrate from widely circulated publications in the 20th century to online government archive and art contexts in the 21st.'
+  media: "PDF"
+  link: "EnteringtheDocumentaryTradition1.pdf"
+  type: "additional"
+
+- name: "Arcade Nouveau"
+  desc: "Tracing the evolution and institutionalization of video games as art."
+  media: "Link"
+  link: "http://columbiaspectator.com/sites/default/files/EyeOnlineSept29.pdf"
+  type: "additional"
+
+- name: "Piracy Lab"
+  desc: "How did piracy of academic texts affect the citation record?"
+  media: "PDF"
+  link: "http://francescorry.net/DigitalHumanities.pdf"
+  type: "additional"
+
+- name: "Oh, Behave"
+  desc: "In conversation with Cuban behavior artist Tania Bruguera."
+  media: "Link"
+  link: "http://www.taniabruguera.com/cms/408-0-Oh+Behave.htm"
+  type: "additional"
+
+- name: "Know the Past, Find the Future: The NYPL at 100"
+  desc: "Celebrating the NYPL's centennial on BOMBlog."
+  media: "Link"
+  link: "http://bombmagazine.org/article/5058/know-the-past-find-the-future-the-nypl-at-100"
+  type: "additional"

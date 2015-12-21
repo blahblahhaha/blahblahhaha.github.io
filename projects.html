@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,79 +7,58 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,300,300italic,100,100italic,900italic,700italic,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,500,500italic,700,300,300italic,100,100italic,900italic,700italic,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <body>
     <div class="projects-container">
       <h1>Projects</h1>
       <div class="paragraph">
         <p>
-          <div class="project-media-object">
-            <a class="project-image-link" href="changingtimes.pdf" target="_blank"><img class="project-image" src="images/nyt.jpg"></a>
-            <div class="project-text">
-              <p class="project-title">Changing Times</p>
-              <p class="project-description">Exploring how the New York Times grappled with the popular adoption of the Web in the early to mid 90s.</p>
-              <a href="changingtimes.pdf" target="_blank" class="project-link">PDF ><span>></span></a>
-            </div>
-          </div>
-          <div class="project-media-object">
-            <a href="https://prezi.com/ui5qn1kgmot0/feminist-remix-culture/" target="_blank"><img class="project-image" src="images/remix.jpg"></a>
-            <div class="project-text">
-              <p class="project-title">Remix, Remark, Reform: On Feminist Remix Culture</p>
-              <p class="project-description">A non-linear presentation on the abilities and limitations of feminist digital video remix to complicate pop-culture narratives. </p>
-              <a href="https://prezi.com/ui5qn1kgmot0/feminist-remix-culture/" target="_blank" class="project-link">Prezi ><span>></span></a>
-            </div>
-          </div>
-          <div class="project-media-object">
-            <a href="http://www.ubermorgen.com/2010/CLICKISTAN_by_Frances_Corry.html" target="_blank"><img class="project-image" src="images/click.png"></a>
-            <div class="project-text">
-              <p class="project-title">CLICKISTAN, Consciousness, and the Implications of Video Games as High Art</p>
-              <p class="project-description">Interactive games in institutional art contexts may be problematic not for the questions they do raise, but for the questions they don’t.</p>
-              <a href="http://www.ubermorgen.com/2010/CLICKISTAN_by_Frances_Corry.html" target="_blank" class="project-link">Link ><span>></span></a>
-            </div>
-          </div>
+        {{ site.data.projects.length }}
+          {% for project in site.data.projects %}
+            {% if project.type == 'featured' %}
+              <div class="project-media-object">
+                <a class="project-image-link" href="{{ project.link }}" target="_blank"><img class="project-image" src="{{ project.image }}"></a>
+                <div class="project-text">
+                  <p class="project-title">{{ project.title }}</p>
+                  <p class="project-description">{{ project.desc }}</p>
+                  <a href="{{ project.link }}" target="_blank" class="project-link">{{ project.media }} ><span>></span></a>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
         </p>
         <p>
           <h2 class="additional-projects">Additional Projects</h2>
           <table>
             <col style="width: 50%">
             <col style="width: 50%">
-            <tr class="projects-table-row">
-              <th class="project-title">
-                Arcade Nouveau
-              </th>
-              <th class="project-title">
-                Piracy Lab
-              </th>
-            </tr>
-            <tr class="projects-table-row">
-              <td class="project-description">
-                <p>Tracing the evolution and institutionalization of video games as art.<!--, from Williamsburg's Babycastles to Cory Arcangel's solo exhibition at the Whitney.--></p>
-                
-                <a href="http://columbiaspectator.com/sites/default/files/EyeOnlineSept29.pdf" target="_blank" class="project-link">Link ><span>></span></a>
-              </td>
-              <td class="project-description">
-                <p>How did piracy of academic texts affect the citation record?</p>
-                <a href="http://francescorry.net/DigitalHumanities.pdf" target="_blank" class="project-link">PDF ><span>></span></a>
-              </td>
-            </tr>
-            <tr class="projects-table-row">
-              <th class="project-title">
-                Oh, Behave
-              </th>
-              <th class="project-title">
-                Know the Past, Find the Future: The NYPL at 100
-              </th>
-            </tr>
-            <tr class="projects-table-row">
-              <td class="project-description">
-                <p>In conversation with Cuban behavior artist Tania Bruguera.</p>
-                <a href="http://www.taniabruguera.com/cms/408-0-Oh+Behave.htm" target="_blank" class="project-link">Link ><span>></span></a>
-              </td>
-              <td class="project-description">
-                <p>Celebrating the NYPL's centennial on BOMBlog.</p>
-                <a href="http://bombmagazine.org/article/5058/know-the-past-find-the-future-the-nypl-at-100" target="_blank" class="project-link">Link ><span>></span></a>
-              </td>
-            </tr>
+            {% for project in site.data.projects %}
+              {% if project.type == 'additional' %}
+                {% assign mod = forloop.index | modulo: 2 %}
+                {% if mod == 0 %}
+                  {% assign next = site.data.projects[forloop.index] %}
+                  <tr class="projects-table-row">
+                    <th class="project-title">
+                      {{ project.name }}
+                    </th>
+                    <th class="project-title">
+                      {{ next.name }}
+                    </th>
+                  </tr>
+                  <tr class="projects-table-row">
+                    <td class="project-description">
+                      <p>{{ project.desc }}</p>
+                      <a href="{{ project.link }}" target="_blank" class="project-link">{{ project.media }} ><span>></span></a>
+                    </td>
+                    <td class="project-description">
+                      <p>{{ next.desc }}</p>
+                      <a href="{{ next.link }}" target="_blank" class="project-link">{{ next.media }} ><span>></span></a>
+                    </td>
+                  </tr>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
           </table>
         </p>
         <a class="back" href="index.html">
